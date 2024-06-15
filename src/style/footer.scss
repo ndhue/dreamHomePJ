@@ -1,0 +1,357 @@
+footer {
+  background: #1C1C1E;
+  position: relative;
+  color: black;
+  .group-icon {
+      margin-bottom: 113px;
+      .box-icons {
+          background-color: #FFF5E0;
+          border-radius: 12px;
+          padding: 30px 31px 45px 30px;
+          .images {
+              flex: none;
+              margin-right: 30px;
+              img {
+                  transition: all 0.8s ease;
+              }
+          }
+          .title-icon {
+              margin-bottom: 13px;
+              font-size: 30px;
+              line-height: 45px;
+              font-weight: 700;
+          }
+          &:hover {
+              .images img {
+                  transform: rotateY(180deg);
+              }
+          }
+      }
+      .button-footer {
+          margin-top: -26px;
+          @keyframes link-icon2 {
+            0% {
+              transform: translateY(0); opacity: 1;
+            }
+            49% { 
+              transform: translateY(20px); opacity: 0;
+            }
+            50% { 
+              transform: translateY(-20px); opacity: 0;
+            }
+            100% {
+              transform: translateY(0); opacity: 1;
+            }
+          }
+          .sc-button:hover svg, .sc-button.active svg {
+            animation: 0.3s link-icon2 linear;
+          }
+          .sc-button {
+              width: 212px;
+              margin-right: 8px;
+              display: inline-block;
+              background-color: #FFA920;
+              box-sizing: border-box;
+              padding: 15px 18.5px;
+              border-radius: 10px;
+              transition: all 0.3s ease;
+              svg {
+                margin-right: 17px;
+                vertical-align: middle;
+                display: inline;
+              }
+              span {
+                  position: relative;
+                  color: #fff;
+                  font-weight: 700;
+                  font-size: 15px;
+                  transition: all 0.3s ease;
+                  &::before {
+                      content: "";
+                      width: 1px;
+                      height: 22px;
+                      background-color: rgba( $text-black, 0.2);
+                      margin-left: -11px;
+                      position: absolute;
+                  }
+              }
+          }
+      }
+  }
+  h3 {
+      margin-bottom: 24px;
+  }
+  &.home2 {
+      background: white;
+      color: $text-black;
+      padding: 0 0 43px;
+      .widget-menu .box-menu li a {
+          color: $text-black;
+          &:hover {
+              color: $primary-color;
+          }
+      }
+      .widget-form button {
+          color: $primary-color;
+          background: linear-gradient(0deg, #FFF5E0, #FFF5E0),
+          linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+          &::after {
+              color: $primary-color;
+          }
+          &:hover {
+              background: $primary-color;
+              color: white;
+              &::after {
+                  color: white;
+              }
+          }
+      }
+      .widget-form .btn-checkbox {
+          border: 1px solid #E5E5EA;
+      }
+  }
+}
+
+.widget-info {
+  .sub-title {
+      margin-bottom: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #8E8E93;
+  }
+  h5 {
+      margin-bottom: 16px;
+  }
+  .text-1 {
+      margin-bottom: 13px;
+      color: #F1FAEE;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+  }
+}
+
+
+/* Widget
+-------------------------------------------------------------- */
+
+/* widget-menu */
+.widget-menu {
+  .title-widget {
+      font-size: 22px;
+      margin-bottom: 28px;
+  } 
+  .box-menu {
+      li {
+          a {
+              margin-bottom: 12px;
+              position: relative;
+              padding-left: 4px;
+              font-size: 14px;
+              color: rgba(#fff ,0.5);
+              .icon {
+                  color: $primary-color;
+                  font-size: 20px;
+                  margin-right: 11px;
+                  transition : all 0.3s ease;
+              }
+          }
+          &:hover {
+              a {
+                  transition : all 0.3s ease;
+                  color: $primary-color;
+                  .icon {
+                      opacity: 0;
+                      visibility: hidden;
+                      margin-right: 0;
+                  }
+              }
+          }
+      }
+  }
+  .images {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 16px;
+  }
+  .button-author {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border: 1px solid #FFFFFF1A;
+      background-color: rgba( white, 0.1);
+      border-radius: 50%;
+      font-size: 10px;
+      transition: all 0.3s ease;
+      &:hover {
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
+      }
+  }
+  .box-icon {
+      margin-bottom: 27px;
+      .icon {
+          margin-right: 17px;
+      }
+      .content {
+          a p {
+              transition : all 0.3s ease;
+              &:hover {
+                  color: $primary-color !important;
+              }
+          }
+      }
+  }
+}
+
+.widget-form {
+  p {
+      padding-top: 1px;
+      margin-bottom: 15px;
+  }
+  label {
+      position: relative;
+      cursor: pointer;
+  }
+  fieldset {
+      position     : relative;
+      width        : 100%;
+      margin-bottom: 10px;
+      input {
+          width: 100%;
+          border: 1px solid #E5E5EA;
+          padding: 16px 14px 15px 17px;   
+          color: $text-black;
+          font-weight: 400;
+          font-size: 13px;
+          background-color: white;
+          border-radius: 10px;
+          transition : all 0.3s ease;
+          position: relative;
+          line-height: 19.5px;
+          &::placeholder {
+              color: #8E8E93;
+              line-height: 19.5px;
+              font-size: 13px;
+              font-weight: 400;
+              transition : all 0.3s ease;
+          }
+          &:focus {
+              border: 1px solid $primary-color;
+          }  
+        
+      }          
+  }
+  button {
+      width: 100%;
+      height: 54px;
+      border: 1px solid #FFFFFF1A;
+      background-color: rgba(white ,0.1);
+      color: white;
+      position: relative;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 10px;
+      margin-bottom: 17px;
+      transition : all 0.3s ease;
+      .icon {
+        padding-left: 10px;
+        font-size: 30px;
+      }
+      &:hover {
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
+      }
+  }
+}
+
+
+.widget-logo-footer {
+  &.home2 {
+      border-top: 1px solid rgba( $text-black, 0.1);
+      color: $text-black;
+      background: white;
+      .icon-social a i {
+          color: $text-black;
+          background-color: white;
+          border: 1px solid #E5E5EA;
+          &:hover {
+              background-color: $primary-color;
+              color: white;
+              border: 1px solid $primary-color;
+          }
+      }
+  }
+  position: relative;
+  padding: 28px 0 28px;
+  border-top: 1px solid rgba( white, 0.1);
+  color: white;
+  background: #1C1C1E;
+  .box-menu {
+      margin-left: 144px;
+      ul {
+          li {
+              margin-right: 40.5px;
+              transition: all 0.3s ease;
+              &:last-child {
+                  margin-right: 0;
+              }
+              &:hover {
+                  color: $primary-color;
+              }
+          }
+      }
+  }
+}
+
+.icon-social {
+  a {
+        display: inline-block;
+      svg {
+          color: white !important;
+          width: 44px;
+          height: 44px;
+          background-color: $text-black;
+          border: 1px solid rgba( white, 0.2);
+          text-align: center;
+          border-radius: 50%;
+          margin-right: 6px;
+          transition: all 0.3s ease;
+          padding: 12px;
+          &:hover {
+              background-color: $primary-color;
+              color: white;
+          }
+      }
+      &:nth-child(2) {
+        svg {
+            padding: 14px;
+        }
+      }
+      &:last-child i {
+          margin-right: 0;
+      }
+  }
+}
+
+/* widget bottom footer */
+.widget-bottom-footer {
+  padding: 30px 0 30px;
+  background: #1C1C1E;
+  border-top: 1px solid rgba( white, 0.1);
+  position: relative;
+  .title-bottom {
+      color: rgba( #F1FAEE, 0.5);
+  }
+  &.home2 {
+      background:white;
+      border-top: 1px solid #E5E5EA;
+      .title-bottom {
+          color: $text-black
+      }
+  }
+}

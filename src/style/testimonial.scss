@@ -1,0 +1,43 @@
+.flat-testimonial {
+  .swiper-container {
+      margin: -5px;
+      padding: 5px;
+  }
+  .box {
+      .inner {
+          box-shadow: 0px 4px 26px 0px #42474C14;
+          padding: 30px 30px;
+          svg {
+              margin: 0 auto;
+              margin-bottom: 20px;
+              transition: all 0.8s ease;
+          }
+          .texts {
+              font-style: italic;
+          }
+      }
+      .author-box {
+          padding: 30px 5px;
+          .images {
+              border-radius: 50%;
+              width: 65px;
+              height: 65px;
+              margin: 0 auto 15px auto;
+          }
+      }
+      &:hover .inner svg {
+          transform: rotateY(360deg);
+      }
+  }
+  .box-title {
+      padding-top: 19px;
+      .inner-title {
+          border: 1px solid #EFEFEF;
+          padding: 8px 18px;
+          border-radius: 999px;
+      }
+      .title-1 {
+          margin-right: 10px;
+      }
+  }
+}

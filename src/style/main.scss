@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "reset";
+@import "variable";
+
+@import "header";
+@import "slider";
+@import "brand";
+@import "feature";
+@import "search";
+@import "sale";
+@import "meet";
+@import "blog";
+@import "testimonial";
+@import "contact";
+@import "footer";
+
+@import "responsive";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

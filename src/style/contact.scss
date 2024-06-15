@@ -1,0 +1,168 @@
+.flat-contact {
+  padding: 0px 0 101px;
+  background-image: url("https://themesflat.co/html/dreamhomehtml/assets/images/section/bg-contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  &.home5 {
+      background-image: url("https://themesflat.co/html/dreamhomehtml/assets/images/section/bg-contact3.png");
+      background-color: rgba(#1C1C1E, 1 );
+      .heading-section {
+          margin-bottom: 50px;
+          padding-top: 63px;
+          padding-right: 0;
+      }
+      .box-info {
+          padding-right: 180px;
+          .icon-info {
+              margin-right: 48px;
+              &::after { 
+                  margin-left: 21px;
+              }
+          }
+      }
+  }
+  &.page-contact {
+      padding: 92px 0 0;
+      background-image: none;
+      .images {
+          margin-top: -60px;
+      }
+      .box-info .icon-info::after {
+          background-color: #D9D9D9;
+          margin-left: 30px;
+      }
+      .mark-img {
+          position: absolute;
+          bottom: 0;
+          right: 10%;
+      }
+  }
+  .heading-section {
+      margin-bottom: 54px;
+      padding-right: 10px;
+      h2 {
+          line-height: 56px;
+      }
+  }
+  .box-info {
+      margin-bottom: 31px;
+      .icon-info {
+          margin-right: 61px;
+          position: relative;
+          &::after {
+              content: "";
+              width: 1px;
+              height: 55px;
+              background-color: #D9D9D9;
+              top: 0px;
+              transform: rotate(21deg);
+              position: absolute;
+              margin-left: 29px;
+          }
+      }
+      .content {
+          h5 {
+              margin-bottom: 3px;
+          }
+      }
+  }
+  .mark-contact {
+      position: absolute;
+      bottom: 0;
+      right: -61px;
+  }
+  .wrap-contact {
+      padding: 42px 29px 30px 30px;
+      box-shadow: 0px 4px 26px 0px #42474C14;
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+      .box-title {
+          margin-bottom: 24px;
+          .title-ct {
+              margin-bottom: 14px;
+          }
+      }
+  }
+}
+
+// comments
+.comments {
+  .comment-form {
+      label {
+          margin-bottom: 11px;
+      }
+      .nice-select {
+          padding: 16px 20px 14px 46px;
+          font-size: 14px;
+          margin-bottom: 24px;
+          border-radius: 10px;
+      } 
+      .img-icon {
+          position: absolute;
+          left: 10px;
+          top: 54px;
+          &.icon-style {
+              bottom: 17px;
+              top:unset
+          }
+      }
+      .img-email {
+          bottom: 19px;
+      }
+      .text-wrap {
+         margin-left: -22px;
+          fieldset {
+              width: calc(50% - 22px);
+              margin-left: 22px;
+          }
+      }
+      .input-item {
+          input {
+              border: 1px solid #E5E5EA;
+              padding: 11px 14px 13px 17px;     
+              color: #120A21;
+              font-weight: 500;
+              background-color: white;
+              border-radius: 10px;
+              transition: all 0.3s ease;
+              position: relative;
+              &::placeholder {
+                  color: #120A21;
+                  line-height: 26px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  transition: all 0.3s ease;
+              }
+              &:focus {
+                  border: 1px solid $primary-color;
+              }             
+          }
+      }
+      button {
+          border: unset;
+          background-color: #FFA920;
+          box-sizing: border-box;
+          border-radius: 10px;
+          transition: all 0.3s ease;
+      }
+  }
+  @keyframes link-icon2 {
+    0% {
+      transform: translateY(0); opacity: 1;
+    }
+    49% { 
+      transform: translateY(20px); opacity: 0;
+    }
+    50% { 
+      transform: translateY(-20px); opacity: 0;
+    }
+    100% {
+      transform: translateY(0); opacity: 1;
+    }
+  }
+  .sc-button:hover svg, .sc-button.active svg {
+    animation: 0.3s link-icon2 linear;
+  }
+}

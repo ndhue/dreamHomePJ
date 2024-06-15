@@ -1,0 +1,92 @@
+.flat-meet {
+  &.page-about {
+      padding: 105px 0 100px;
+  }
+  .box {
+      &:hover {
+          .icon-socials {
+              right: 0;
+              opacity: 1;
+          }
+      }
+      .content {
+          padding: 21px 0;
+          h3 {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            transition: all 0.3s ease;
+            &:hover {
+              a {
+                color: $primary-color;
+              }
+            }
+          }
+          .icon-box {
+              a {
+                  width: 38px;
+                  height: 38px;
+                  border: 1px solid #EFEFEF;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                  margin-left: 7px;
+                  font-size: 13px;
+                  transition: all 0.3s ease;
+                  &:hover {
+                      background-color: $primary-color;
+                      svg {
+                          color: white !important;
+                      } 
+                  }
+              }
+          }
+      }
+
+      &.hover-img {
+        .img-style img {
+          width: 100%;
+          object-fit: cover;
+          transition: all 1s cubic-bezier(0.3, 1, 0.35, 1) 0s;
+          transition: transform 500ms ease;
+        }
+        &:hover img {
+          transform: scale3d(1.1, 1.1, 1.1);
+          transition: all 2s cubic-bezier(0.3, 1, 0.35, 2) 0s;
+        }
+      }
+  }
+  .images {
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  .icon-socials {
+      background-color: $primary-color;
+      position: absolute;
+      width: 50px;
+      height: 100%;
+      top: 0;
+      right: -30px;
+      display: grid;
+      transition: all 0.4s ease;
+      opacity: 0;
+      a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      svg {
+          font-size: 17px;
+          color: white;
+      }
+  }
+  .box-text {
+      padding-top: 1px;
+      a {
+          margin-left: 3px;
+          text-decoration: underline;
+      }
+  }
+}

@@ -1,0 +1,116 @@
+.flat-blog {
+    background-color: #F7F7F7;
+  .hover-img {
+    .images {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .img-style img {
+      width: 100%;
+      object-fit: cover;
+      transition: all 1s cubic-bezier(0.3, 1, 0.35, 1) 0s;
+      transition: transform 500ms ease;
+    }
+    &:hover img {
+      transform: scale3d(1.1, 1.1, 1.1);
+      transition: all 2s cubic-bezier(0.3, 1, 0.35, 2) 0s;
+    }
+  }
+  &.home {
+      background-color: #F7F7F7;
+  }
+  &.home2 {
+      .content {
+          padding: 20px 0px 0;
+      }
+      .sub-box {
+          left: 24.5%;
+      }
+  }
+  &.page-detail {
+      padding: 41px 0 100px;
+      .title-heading {
+          margin-bottom: 30px;
+      }
+  }
+  .sub-box {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      width: 152px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      border-radius: 6px;
+      transform: translateX(-50%);
+      padding: 0px 15px;
+      font-size: 13px;
+      font-weight: 600;
+      .title-1 {
+      }
+      .icon {
+        display: inline;
+        margin: 0 2px 0 10px;
+      }
+      .title-2 {
+         color: $primary-color;
+      }
+  }
+  .content {
+      padding: 20px 5px 0;
+      h3 {
+          margin-bottom: 16px;
+      }
+  }
+}
+@keyframes link-icon {
+	0% {
+		transform: translateX(0); opacity: 1;
+	}
+	49% { 
+		transform: translateX(20px); opacity: 0;
+	}
+	50% { 
+		transform: translateX(-20px); opacity: 0;
+	}
+	100% {
+		transform: translateX(0); opacity: 1;
+	}
+}
+.meta {
+  .btn-button {
+      &:hover svg {
+        animation: 0.3s link-icon linear;
+      } 
+      span {
+        transition: all 0.3s ease;
+      }
+      i {
+          margin-left: 9px;
+          transition: all 0.3s ease;
+      }
+      svg {
+          margin-left: 11px;
+          path {
+              transition: all 0.3s ease;
+          }
+      }
+  }
+  &.style {
+      .btn-button {
+          &:hover {
+              span {
+                  color: $primary-color;
+              }
+              i {
+                  color: $primary-color;
+              }
+              svg path {
+                  stroke: $primary-color;
+              } 
+          }
+      }
+  }
+}
